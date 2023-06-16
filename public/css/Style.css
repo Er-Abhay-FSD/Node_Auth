@@ -1,0 +1,64 @@
+.ninja{
+    animation: rotates 1s linear infinite alternate;
+    color: rgba(207, 22, 28, 0.933);
+
+    }
+    @keyframes rotates {
+        from{
+            transform: translate(-0.9rem);
+        }
+        to{
+            transform: translate(0.9rem);
+        }
+        
+    }
+.para{
+    color: red;
+    text-align: center;
+    width: 100%;
+} 
+/* signup page css */
+.card {
+    background-color: yellow;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #0be846;
+}
+
+.card-body {
+    padding: 2rem;
+}
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(
+        to right,
+        #ff9966,
+        #ff5e62,
+        #ff2f4c
+    );
+    opacity: 0.5;
+    animation: sparkling 3s linear infinite;
+}
+
+@keyframes sparkling {
+    0% {
+        background-position: -100% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}

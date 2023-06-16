@@ -1,0 +1,36 @@
+{
+  "name": "authentication",
+  "version": "1.0.0",
+  "description": "Register, Login , And Logout page ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js -e js, ejs",
+    "build": "npm run build"
+  },
+  "author": "Abhay Singh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "build": "^0.1.4",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.1.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "googleapis": "^118.0.0",
+    "mailer": "^0.6.7",
+    "mongodb": "^5.5.0",
+    "mongoose": "^6.6.5",
+    "node": "^20.2.0",
+    "nodemailer": "^6.9.3",
+    "nodemon": "^2.0.22",
+    "passport": "^0.6.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^7.1.2"
+  }
+}

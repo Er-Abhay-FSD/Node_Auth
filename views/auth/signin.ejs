@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/signpage.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+  </head>
+  <body>
+    <section class="form-section">
+      <div class="form-wrapper">
+        <div id="">
+        <form action="/signin" method="POST" class="form" >
+          <% if(messages.error) { %>
+          <span class="text-daek red-500 text-sm para"><%= messages.error %></span>
+          <% } %>
+          <div class="photo-info">
+            <img src="images/profile1.jpg" alt="" />
+            <h3>Welcome</h3>
+          </div>
+          <div class="input-block username">
+            <input
+              name="username"
+              value="<%= messages.username  %>"
+              type="username"
+              class="form-control"
+              id="username"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="input-block password">
+            <input
+              name="password"
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="********************"
+            />
+          </div>
+          <p>
+            Don’t have an account? <a href="/" class="span">Sign Up</a> here.
+          </p>
+          <p>
+            <a class="inline-block align-baseline font-bold text-sm " href="/reset">
+                Change your password?
+            </a>
+          </p>
+
+          <!-- <button type="submit" class="btn-login">Sign In</button> -->
+          <button type="submit" class="btn-login">Login</button>
+        </form>
+        </div>
+      </div>
+    </section>
+
+    <ul class="squares"></ul>
+
+    <script src="js/signscrit.js"></script>
+  </body>
+</html>
